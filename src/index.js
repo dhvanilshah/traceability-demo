@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import QRGen from './App';
 import Copy from './Copy';
 import registerServiceWorker from './registerServiceWorker';
 import * as firebase from 'firebase';
@@ -17,7 +17,7 @@ var config = {
 
 firebase.initializeApp(config);
 
-ReactDOM.render(<App msg="Getting Identifiaction Number..."/>, document.getElementById('root'));
+ReactDOM.render(<QRGen msg="Getting Identifiaction Number..."/>, document.getElementById('root'));
 
 getOysterData(window.location.hash.substring(1));
 
@@ -35,7 +35,7 @@ function getOysterData(key) {
     });
   } 
   else {
-    ReactDOM.render(<App msg="No Data Found" isHidden={false}/>, document.getElementById('root'));
+    ReactDOM.render(<QRGen msg="No Data Found" isHidden={false}/>, document.getElementById('root'));
   };
 }
 function loadConsumerEnd(){

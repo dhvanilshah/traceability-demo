@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajv": "^6.5.2",
     "firebase": "^5.1.0",
     "jspdf": "^1.4.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-qr-svg": "^2.1.0",
     "react-scripts": "1.1.4"
   },
   "scripts": {
