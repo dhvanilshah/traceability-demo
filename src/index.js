@@ -7,12 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import * as firebase from 'firebase';
 
 var config = {
-    apiKey: "AIzaSyAkukTBsbt9SyUIqdNqcyK0iyUciYFFbB4",
-    authDomain: "ot-tracebility.firebaseapp.com",
-    databaseURL: "https://ot-tracebility.firebaseio.com",
-    projectId: "ot-tracebility",
-    storageBucket: "ot-tracebility.appspot.com",
-    messagingSenderId: "492250369502"
+    // enter config data
   };
 
 firebase.initializeApp(config);
